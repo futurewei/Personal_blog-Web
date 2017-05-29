@@ -1,18 +1,16 @@
 {% extends "personal/header.html" %}
 
-<style>
-p {
-    border-style: solid;
-    border-color: red;
-}
-
-
-
-</style>
-
 
 {% load static %}
       {%block content%}
-       <img src = "{%static 'personal/img/profile.jpg'%} ", height = 450, width =600>
+      <style>
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+	</style>
+       <img src = "{%static 'personal/img/profile.jpg'%} ", height = 800, width =1000 >
   	{%endblock%}
 
